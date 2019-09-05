@@ -7,10 +7,12 @@ const Stack = (function(EventEmitterClass) {
 
         push(value) {
             this._values.push(value);
+            this.emit('pushStackNode', value);
         }
 
         pop() {
-            return this._values.pop();
+            const value = this._values.pop();
+            this.emit('popStackNode', value);
         }
     }
 

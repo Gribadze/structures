@@ -9,3 +9,4 @@ stack.on('pushStackNode', onPushNode);
 
 stack.push(1);
 stack.push(2);
+
